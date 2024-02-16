@@ -75,9 +75,9 @@ const CarouselComponent = ({ items }) => (
 const LandingPage = () => (
   <div className="landing-page">
     <h1 style={{ textAlign: 'center' }}>Welcome to SuperCoolShop</h1>
-    <h2>Featured Products</h2>
+    <h2 className='landing-title'>Featured Products</h2>
     <CarouselComponent items={products} />
-    <h2>Shop by Category</h2>
+    <h2 className='landing-title'>Shop by Category</h2>
     <CarouselComponent items={categories} />
   </div>
 );

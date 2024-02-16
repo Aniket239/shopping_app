@@ -1,4 +1,5 @@
 .login-container{
+    margin: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,29 +23,31 @@
   }
   
   .login h2 {
-    color: black; /* Light color for the text */
-    margin-bottom: 20px; /* Space below the heading */
+    color: #004c9d; /* Light color for the text */
+    margin: 20px 0; /* Space below the heading */
   }
   .login-form{
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
   }
   .login-form button {
-    width: 70%; /* Full width of the parent */
+    width: 50%; /* Full width of the parent */
     padding: 10px; /* Padding inside the button */
-    margin-top: 30px;
+    margin-top: 60px;
     border-radius: 5px; /* Rounded corners for the button */
     border: none; /* Remove default border */
-    background-color: #007BFF; /* Background color for the button */
+    background-color: #004c9d; /* Background color for the button */
     color: #fff; /* Text color for the button */
     cursor: pointer; /* Cursor to pointer on hover */
+    transition: all 0.2s ease-in-out;
   }
   
   .login-form button:hover {
-    background-color: #0056b3; /* Darker shade for hover effect */
+    background-color: #78b9ff;
+    color: black; /* Darker shade for hover effect */
   }
   .form__group {
     position: relative;
