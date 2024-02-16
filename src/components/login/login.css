@@ -1,0 +1,109 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login {
+    min-height: 400px; /* Adjust the height as needed */
+    width: 30%; /* Adjust the width as needed */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect for the background */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Light border for the glass effect */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    gap: 15px; /* Space between children */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login h2 {
+    color: black; /* Light color for the text */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  .login-form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .login-form button {
+    width: 70%; /* Full width of the parent */
+    padding: 10px; /* Padding inside the button */
+    margin-top: 30px;
+    border-radius: 5px; /* Rounded corners for the button */
+    border: none; /* Remove default border */
+    background-color: #007BFF; /* Background color for the button */
+    color: #fff; /* Text color for the button */
+    cursor: pointer; /* Cursor to pointer on hover */
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  .form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: black;
+    padding: 25px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    margin-top: 20px;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #38caef;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
