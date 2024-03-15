@@ -1,0 +1,87 @@
+/* navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-icon img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .logo-icon p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+  .nav-menu li {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  .nav-menu li hr {
+    width: 100%;
+    height: 2px; /* Set height for the underline */
+    background-color: red; /* Set the color of the underline */
+  }
+  .nav-login-cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-login-cart button {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 20px;
+  }
+  
+  .nav-login-cart button:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-login-cart img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .nav-cart-count {
+    background-color: #ff5733;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    margin: -25px 0 0 -10px;
+  }
+  
