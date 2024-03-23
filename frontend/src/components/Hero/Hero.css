@@ -54,11 +54,13 @@
     color: white;
     font-size: 1.4rem; /* Using 'rem' for better scalability */
     font-weight: 500;
+    transition: all 0.2s ease-in-out;
 }
 
 .hero-latest-btn:hover{
     cursor: pointer;
     background: #f02f2f;
+    transform: scale(1.03);
 }
 
 .hero-right {
